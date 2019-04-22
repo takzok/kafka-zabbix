@@ -63,15 +63,6 @@ services:
       - PHP_TZ=${TIME_ZONE}
     ports:
       - ${HTTP_PORT}:80
-  zabbix-agent:
-    image: zabbix/zabbix-agent:${OS}-${VERSION}
-    links:
-      - zabbix-server
-    privileged: true
-    environment:
-      - ZBX_SERVER_HOST=zabbix-server
-    expose:
-      - 10050
   zabbix-java-gw:
     image: zabbix/zabbix-java-gateway:${OS}-${VERSION}
     privileged: true
@@ -87,3 +78,5 @@ services:
       - zabbix-server
     ports:
       - 3000:3000
+    environment:
+      GF_INSTALL_PLUGINS: alexanderzobnin-zabbix-app
