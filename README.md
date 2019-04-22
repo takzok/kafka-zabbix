@@ -33,3 +33,20 @@ This docker-compose contains following containers.
 
   http://localhost:3000
   * Default userID and password is `admin/admin`.
+
+## Zabbix configuration
+### Add template for Kafka JMX
+Go to `Configuration` > `Templates` > `Import`, and select `kafka_jmx_templates.xml`
+
+![add-template](https://github.com/takzok/kafka-zabbix/blob/master/doc/images/zabbix-add-template.png)
+
+### Add Hosts
+Go to `Configuration` > `Hosts` > `Create Host`, and add JMX interfaces
+![add-host-jmx](https://github.com/takzok/kafka-zabbix/blob/master/doc/images/zabbix-add-host-jmx.png)
+
+Then, Link template to this host.
+Go to `templates`, and add the template.
+![add-host-template](https://github.com/takzok/kafka-zabbix/blob/master/doc/images/zabbix-add-host-templates.png)
+
+
+## enable Zabbix plugin
