@@ -1,4 +1,4 @@
-# Kafka-prometheus
+# Kafka-zabbix
 
 Docker-compose file for Apache Kafka metrics monitoring verification using zabbix.
 
