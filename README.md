@@ -12,7 +12,6 @@ This docker-compose contains following containers.
 - zabbix
   - [zabbix/zabbix-server-mysql](https://hub.docker.com/r/zabbix/zabbix-server-mysql/tags/)
   - [zabbix/zabbix-java-gateway](https://hub.docker.com/r/zabbix/zabbix-java-gateway/)
-  - [zabbix/zabbix-agent](https://hub.docker.com/r/zabbix/zabbix-agent)
 - database
   - [mySQL](https://hub.docker.com/_/mysql)
 - grafana
